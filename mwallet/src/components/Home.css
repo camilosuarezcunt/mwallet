@@ -1,0 +1,33 @@
+.content {
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  height: 520px;
+  overflow-y: auto;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #101924;
+  color: white;
+  border: 1px solid #364A63;
+  border-radius: 4px;
+}
+
+.content .title {
+  font-size: 40px;
+  font-weight: ExtraBold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.content .subtitle {
+  font-size: 20px;
+  color: white;
+}
+
+.frontPageButton {
+  width: 90%;
+  margin-top: 20px;
+}

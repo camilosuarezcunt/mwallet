@@ -1,10 +1,10 @@
-// Tokens.jsx
 import React from 'react';
 import { List, Avatar } from 'antd';
+import './Tokens.css';
 
 const Tokens = ({ tokens, logo }) => {
   return (
-    <>
+    <div className='tokens-container'>
       {tokens ? (
         <>
           <List
@@ -38,7 +38,7 @@ const Tokens = ({ tokens, logo }) => {
           <span>You seem to not have any tokens yet</span>
         </>
       )}
-    </>
+    </div>
   );
 };
 

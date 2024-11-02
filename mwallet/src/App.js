@@ -16,7 +16,7 @@ function App() {
     const item = localStorage.getItem(key);
     return item && item !== 'null' ? item : null;
   }
-  
+
   // Cargar los valores iniciales desde localStorage de forma segura
   const [wallet, setWallet] = useState(getLocalStorageItem('wallet'));
   const [seedPhrase, setSeedPhrase] = useState(getLocalStorageItem('seedPhrase'));
@@ -40,29 +40,6 @@ function App() {
       navigate("/yourwallet");
     }
   }, [wallet, seedPhrase]);
-
-  /*
-  const [wallet, setWallet] = useState(null);
-  const [seedPhrase, setSeedPhrase] = useState(null);
-  const [selectedChain, setSelectedChain] = useState("0x1");
-
-  useEffect(() => {
-    // Cargar valores iniciales desde storage
-    browser.storage.local.get(['wallet', 'seedPhrase']).then((result) => {
-      if (result.wallet) setWallet(result.wallet);
-      if (result.seedPhrase) setSeedPhrase(result.seedPhrase);
-    });
-  }, []);
-
-  useEffect(() => {
-    // Guardar cambios en storage
-    browser.storage.local.set({ wallet });
-  }, [wallet]);
-
-  useEffect(() => {
-    browser.storage.local.set({ seedPhrase });
-  }, [seedPhrase]);
-  */
 
   return (
     <div className="App">

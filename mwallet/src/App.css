@@ -1,3 +1,140 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.credential-container {
+  background-color: transparent;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.credential-details {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.credential-text {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.credential-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.credential-username {
+  flex: 1;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.credential-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  transition: color 0.5s, transform 0.3s ease-out, font-size 0.3s ease-out;
+}
+
+.credential-icon.active {
+  color: #00FF9C;
+  transform: rotate(88deg);
+  font-size: 21px;
+}
+
+.credential-content {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+.credential-content.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.eye-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.eye-button:hover {
+  border: none;
+  color: #00FF9C;
+  background-color: transparent;
+}
+
+.eye-icon {
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.eye-icon.active {
+  border: none;
+  color: #00FF9C;
+}
+
+.copied-message {
+  margin-left: 10px;
+  color: #00FF9C;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 24px;
+  border-radius: 30%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.bg-primary {
+  background-color: #7367f0;
+}
+
+.header-white {
+  color: white;
+  font-size: 40px;
+}
+
+.header-white .title{
+  color: white;
+  font-size: 30px;
+}
+
 .App {
   text-align: center;
   width: 350px;
@@ -6,32 +143,16 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #162b46;
+  background-color: #101924;
+}
+
+.dark-mode {
+  background-color: #101924;
+  color: white;
 }
 
 .frontPageLogo {
   width: 80%;
-}
-
-.frontPageButton {
-  width: 90%;
-  margin-top: 20px;
-}
-
-.frontPageBottom {
-  align-items: flex-end;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 15px;
-  gap: 5px;
-  color: white;
-}
-
-.frontPageBottom:hover {
-  cursor: pointer;
-  font-weight: 600;
 }
 
 h2 {
@@ -50,64 +171,92 @@ a:visited {
 }
 
 header {
+  padding: 10px;
   width: 100%;
   height: 90px;
   background-color: #0a182e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .headerLogo {
-  height: 50px;
+  height: 60px;
   margin-left: 20px;
 }
 
 .dropdown {
-  margin-right: 20px;
-  background-color: #23272a;
+  color: #1e1e2d;
+  margin-left: 80px;
+  margin-right: 30px;
+  background-color: black;
 }
 
-.content {
-  text-align: center;
-  width: 350px;
-  height: 520px;
-  overflow-y: auto;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #162b46;
-}
-
-.mnemonic {
+.dropdown-menu {
+  background-color: #1e1e2d;
   color: white;
-  background: #1677ff;
-  border-radius: 4px;
-  padding: 10px 20px 10px 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: justify;
-  width: 280px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
+  border: 1px solid #364A63;
 }
 
-.seedPhraseContainer {
-  width: 310px;
-  min-height: 160px;
-  padding: 5px;
-  margin-top: 30px;
+.dropdown-menu .ant-dropdown-menu-item {
+  background-color: #1e1e2d;
+  color: white;
+}
+
+.dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+.ant-dropdown-menu {
+  background-color: #1e1e2d;
+  color: white;
+  border: 1px solid #364A63;
+}
+
+.ant-dropdown-menu-item {
+  background-color: #1e1e2d;
+  color: #364A63;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #333;
+  color: white;
+}
+
+.ant-dropdown-menu-item-group-title {
+  color: white;
+}
+
+.add-button {
+  background-color: #0E4EA4;
+  border-color: #0E4EA4;
+  color: white;
+  margin: 5px;
+}
+
+.add-button:hover {
+  background-color: #0c3b8a;
+  border-color: #0c3b8a;
+}
+
+.setting-button {
+  background-color: #0E4EA4;
+  border-color: #0E4EA4;
+  color: white;
+  margin: 5px;
+}
+
+.setting-button:hover {
+  background-color: #0c3b8a;
+  border-color: #0c3b8a;
 }
 
 .walletName {
   color: white;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 900;
   margin-bottom: 5px;
 }
 
@@ -174,5 +323,221 @@ header {
 }
 
 label {
+  color: black !important;
+}
+
+.input-dark {
+  width: 260px;
+}
+
+.input-dark .ant-input {
+  background-color: #101924;
+  color: white;
+  border-color: #364A63;
+}
+
+.input-dark .ant-input::placeholder {
+  color: #888;
+}
+
+.input-dark .ant-input:focus, .search-bar-small .ant-input:hover {
+  border-color: #364A63;
+  box-shadow: 0 0 0 2px rgba(54, 74, 99, 0.2);
+}
+
+.input-dark .ant-input-search-button {
+  background-color: #101924;
+  border-color: #364A63;
+}
+
+.input-dark .ant-input-search-button:hover {
+  background-color: #101924;
+  border-color: #364A63;
+}
+
+.input-dark .ant-input-search-button .anticon {
+  color: #364A63 !important;
+  position: relative;
+  top: -2px;
+}
+
+.sorting-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #101924;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sorting-button:hover {
+  background-color: #0c3b8a;
+  border-color: #0c3b8a;
+}
+
+.sortmenu {
+  background-color: black;
+  color: white;
+  border: 1px solid #364A63;
+}
+
+.sortmenu .ant-dropdown-menu {
+  background-color: #1e1e2d; /* Fondo del menú desplegable */
+  color: white; /* Color del texto */
+}
+
+.sortmenu .ant-dropdown-menu-item {
+  background-color: #1e1e2d; /* Fondo de los elementos del menú */
+  color: white; /* Color del texto de los elementos del menú */
+}
+
+.sortmenu .ant-dropdown-menu-item:hover {
+  background-color: #333; /* Fondo de los elementos del menú al pasar el mouse */
+  color: white; /* Color del texto de los elementos del menú al pasar el mouse */
+}
+
+.sortmenu .ant-dropdown-menu-item-group-title {
+  color: white; /* Color del texto del título del grupo de elementos */
+}
+
+.add-button {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra el icono horizontalmente */
+  margin-left: 10px;
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  color: white; /* Icono de color blanco */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.setting-button {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra el icono horizontalmente */
+  /* margin-left: 10px; */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  color: white; /* Icono de color blanco */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.filter-button {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra el icono horizontalmente */
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 0px;
+  background-color: #101924; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  color: white; /* Icono de color blanco */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.filter-button:hover {
+  background-color: #0c3b8a;
+  border-color: #0c3b8a;
+}
+
+/********* Filter menu *********/
+
+.filter-wg {
+  max-width: 300px;
+  background-color: #101924; /* Color de fondo ajustado */
+  color: white;
+  padding: 10px 20px 20px 20px; /* Agregar padding */
+  border: 1px solid #364A63; /* Color del borde ajustado */
+  border-radius: 4px;
+  font-size: 14px; /* Ajustar el tamaño de la fuente */
+}
+
+.dropdown-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-title {
+  font-weight: bold;
+  color: white; /* Asegúrate de que el texto sea blanco */
+}
+
+.dropdown-body {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.dropdown-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.clickable {
+  color: white; /* Color ajustado */
+}
+
+a.clickable:hover {
+  text-decoration: underline;
+}
+
+/* Estilos personalizados para el Select */
+.ant-select {
+  color: #101924; /* Color del texto del Select */
+  background-color: #101924;
+}
+
+.ant-select-selector {
+  background-color: #101924; /* Color de fondo del Select */
+  border: 1px solid #364A63; /* Color del borde del Select */
+}
+
+.ant-select-dropdown {
+  background-color: #101924; /* Color de fondo del menú desplegable */
+  color: white; /* Color del texto del menú desplegable */
+}
+
+.ant-select-item {
+  color: white; /* Color del texto de las opciones */
+}
+
+.ant-select-item-option-selected {
+  background-color: #364A63 !important; /* Color de fondo de la opción seleccionada */
+}
+
+/* Estilos personalizados para las etiquetas */
+.label-white {
+  color: white; /* Color del texto de las etiquetas */
+}
+
+.dropdown .ant-select-selector {
+  background-color: black; /* Fondo negro */
+  color: white; /* Letras blancas */
+  border: 1px solid #ccc; /* Borde opcional */
+}
+
+.dropdown .ant-select-dropdown {
+  background-color: black; /* Fondo negro del menú desplegable */
+  color: white; /* Letras blancas del menú desplegable */
+}
+
+.dropdown .ant-select-item {
+  color: white; /* Letras blancas de las opciones */
+}
+
+.dropdown .ant-select-item-option-selected {
+  background-color: #333 !important; /* Fondo de la opción seleccionada */
+}
+
+.cancel-button {
+  background-color: #f0f0f09c;
+  border-color: #f0f0f09c;
   color: white !important;
 }

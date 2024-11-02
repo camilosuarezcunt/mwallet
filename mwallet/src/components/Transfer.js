@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Input, Button, Spin, Tooltip } from 'antd';
+import { Input, Button, Spin, Tooltip, Form } from 'antd';
 import { ethers } from "ethers";
+import './Transfer.css';
 
 const Transfer = ({
   balance,
@@ -14,7 +15,7 @@ const Transfer = ({
   const [amountToSend, setAmountToSend] = useState(null);
   const [sendToAddress, setSendToAddress] = useState(null);
   const [hash, setHash] = useState(null);
-   
+
   async function sendTransaction(to, amount) {
     const chain = CHAINS_CONFIG[selectedChain];
 
@@ -54,36 +55,46 @@ const Transfer = ({
     }
   }
 
-
   return (
-    <>
-      <h3>Native Balance</h3>
-      <h1>
+    <div className="transfer-container">
+      <h3 className="header-white title">Native Balance</h3>
+      <h1 className="header-white">
         {balance.toFixed(3)} {CHAINS_CONFIG[selectedChain].ticker}
       </h1>
       <div className="sendRow">
-        <p style={{ width: "90px", textAlign: "left" }}>To:</p>
-        <Input
-          value={sendToAddress}
-          onChange={(e) => setSendToAddress(e.target.value)}
-          placeholder="0x..."
-        />
+        <Form.Item
+          label={<p className="transfer-text">To:</p>}
+          className="transfer-form-item"
+        >
+          <Input
+            value={sendToAddress}
+            onChange={(e) => setSendToAddress(e.target.value)}
+            placeholder="0x..."
+            className="transfer-form input-to"
+          />
+        </Form.Item>
       </div>
       <div className="sendRow">
-        <p style={{ width: "90px", textAlign: "left" }}>Amount:</p>
-        <Input
-          value={amountToSend}
-          onChange={(e) => setAmountToSend(e.target.value)}
-          placeholder="Native tokens you wish to send..."
-        />
+        <Form.Item
+          label={<p className="transfer-text">Amount:</p>}
+          className="transfer-form-item"
+        >
+          <Input
+            value={amountToSend}
+            onChange={(e) => setAmountToSend(e.target.value)}
+            placeholder="Native tokens you wish to send..."
+            className="transfer-form input-amount"
+          />
+        </Form.Item>
       </div>
       <Button
-        style={{ width: "100%", marginTop: "20px", marginBottom: "20px" }}
         type="primary"
         onClick={() => sendTransaction(sendToAddress, amountToSend)}
+        className="transfer-button"
       >
         Send Tokens
       </Button>
+
       {processing && (
         <>
           <Spin />
@@ -94,7 +105,7 @@ const Transfer = ({
           )}
         </>
       )}
-    </>
+    </div>
   );
 };
 

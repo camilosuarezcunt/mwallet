@@ -1,0 +1,53 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\.npmrc
+5 silly config load:file:C:\Users\karmi\.npmrc
+6 silly config load:file:C:\Users\karmi\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm start
+8 verbose argv "start"
+9 verbose logfile logs-max:10 dir:C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\tmpnodejsnpm-cache\_logs\2024-10-30T12_54_55_576Z-
+10 verbose logfile C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\tmpnodejsnpm-cache\_logs\2024-10-30T12_54_55_576Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 verbose stack Error: kill EPERM
+13 verbose stack     at ChildProcess.kill (node:internal/child_process:512:26)
+13 verbose stack     at process.handleSignal (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\signal-manager.js:14:10)
+13 verbose stack     at process.emit (node:events:520:28)
+14 verbose pkgid mwallet@0.1.0
+15 error code EPERM
+16 error syscall kill
+17 error path C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet
+18 error errno -4048
+19 error Error: kill EPERM
+19 error     at ChildProcess.kill (node:internal/child_process:512:26)
+19 error     at process.handleSignal (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\signal-manager.js:14:10)
+19 error     at process.emit (node:events:520:28) {
+19 error   errno: -4048,
+19 error   code: 'EPERM',
+19 error   syscall: 'kill',
+19 error   cmd: 'C:\\WINDOWS\\system32\\cmd.exe',
+19 error   args: [ '/d', '/s', '/c', 'react-scripts start' ],
+19 error   stdout: null,
+19 error   stderr: null,
+19 error   event: 'start',
+19 error   script: 'react-scripts start',
+19 error   pkgid: 'mwallet@0.1.0',
+19 error   path: 'C:\\Users\\karmi\\Documents\\crypto_react_project\\clone - Copy\\master2024-dePass\\mwallet'
+19 error }
+20 error
+20 error The operation was rejected by your operating system.
+20 error It's possible that the file was already in use (by a text editor or antivirus),
+20 error or that you lack permissions to access it.
+20 error
+20 error If you believe this might be a permissions issue, please double-check the
+20 error permissions of the file and its containing directories, or try running
+20 error the command again as root/Administrator.
+21 verbose cwd C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet
+22 verbose os Windows_NT 10.0.22631
+23 verbose node v22.8.0
+24 verbose npm  v10.8.2
+25 verbose exit -4048
+26 verbose code -4048
+27 error A complete log of this run can be found in: C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\tmpnodejsnpm-cache\_logs\2024-10-30T12_54_55_576Z-debug-0.log

@@ -1,0 +1,13 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\.npmrc
+5 silly config load:file:C:\Users\karmi\.npmrc
+6 silly config load:file:C:\Users\karmi\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm start
+8 verbose argv "start"
+9 verbose logfile logs-max:10 dir:C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\tmpnodejsnpm-cache\_logs\2024-10-29T19_32_46_438Z-
+10 verbose logfile C:\Users\karmi\Documents\crypto_react_project\clone - Copy\master2024-dePass\mwallet\tmpnodejsnpm-cache\_logs\2024-10-29T19_32_46_438Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files

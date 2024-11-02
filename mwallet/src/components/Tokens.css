@@ -1,0 +1,17 @@
+.tokenAmount,
+.tokenList,
+.tokenName {
+  color: white;
+}
+
+.tokens-container {
+  background-color: #101924;
+  color: white;
+  padding: 20px; /* Añadir padding al componente */
+  border: 1px solid #364A63;
+  border-radius: 4px;
+  height: 295px;
+  min-height: 295px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el cálculo de la altura */
+  overflow: auto; /* Permite el desplazamiento si el contenido es más grande que la altura del viewport */
+}

@@ -1,3 +1,4 @@
+import "./Home.css";
 import React from "react";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -8,8 +9,8 @@ function Home() {
   return (
     <>
       <div className="content">
-        <h2> Best Crypto Wallet</h2>
-        <h4 className="h4">Secure, Self Custodial, Decentralized</h4>
+        <h2 className="title">Best Crypto Wallet</h2>
+        <h4 className="subtitle">Secure, Self Custodial, Decentralized</h4>
         <Button
           onClick={() => navigate("/createaccount")}
           className="frontPageButton"

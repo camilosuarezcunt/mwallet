@@ -1,0 +1,125 @@
+header {
+  /* padding: 10px; */
+  width: 100%;
+  height: 90px;
+  background-color: #0a182e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-white {
+  color: white;
+  font-size: 40px;
+}
+
+.header-white .title {
+  color: white;
+  font-size: 30px;
+}
+
+.sendRow {
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  display: flex;
+  justify-content: flex-start;
+  gap: 0px;
+  align-items: center;
+  width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+}
+
+.transfer-container {
+  background-color: #101924;
+  color: white;
+  padding: 20px; /* Añadir padding al componente */
+  border: 1px solid #364A63;
+  border-radius: 4px;
+}
+
+.transfer-form-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px; /* Asegurar que no haya margen inferior */
+  gap: 5px; /* Reducir el espacio entre el label y el input */
+}
+
+.transfer-form-item .ant-form-item-label {
+  flex: 0 0 70px; /* Reducir el ancho del label */
+  text-align: left;
+  margin-bottom: 0px; /* Asegurar que no haya margen inferior */
+}
+
+.transfer-form-item .ant-form-item-control {
+  flex: 1;
+  margin-bottom: 0px; /* Asegurar que no haya margen inferior */
+  padding-right: 0px; /* Asegurar que no haya padding derecho */
+}
+
+.transfer-form {
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  margin-top: 0px; /* Reducir el margen superior */
+  margin-bottom: 0px; /* Asegurar que no haya margen inferior */
+}
+
+.transfer-form .ant-input {
+  background-color: #101924; /* Fondo negro para el input */
+  color: white; /* Letras blancas para el input */
+  border-color: #364A63; /* Color del borde */
+  width: 100%; /* Asegurar que el input ocupe todo el ancho del contenedor */
+  padding-right: 0px; /* Asegurar que no haya padding derecho */
+}
+
+.transfer-form .ant-input::placeholder {
+  color: #888 !important; /* Color del placeholder */
+}
+
+.transfer-form .ant-input:focus, .transfer-form .ant-input:hover {
+  border-color: #364A63 !important; /* Color del borde al enfocar o pasar el mouse */
+  box-shadow: 0 0 0 2px rgba(54, 74, 99, 0.2) !important; /* Sombra del borde */
+}
+
+.transfer-text {
+  font-family: 'Nunito', sans-serif; /* Asegúrate de que la fuente esté disponible */
+  color: white; /* Color del texto */
+  font-size: 14px; /* Tamaño de la fuente */
+}
+
+.transfer-button {
+  background-color: #0E4EA4;
+  border-color: #0E4EA4;
+  color: white;
+  width: 100%; /* Asegurar que el botón ocupe todo el ancho */
+  margin-top: 20px;
+  margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+.transfer-button:hover {
+  background-color: #0c3b8a;
+  border-color: #0c3b8a;
+}
+
+/* Clases específicas para cada input */
+.input-to {
+  background-color: #101924; /* Fondo negro para el input */
+  color: white; /* Letras blancas para el input */
+  border-color: #364A63; /* Color del borde */
+  width: calc(138%); /* Ajustar el ancho del input restando el ancho del label */
+}
+
+.input-amount {
+  background-color: #101924; /* Fondo negro para el input */
+  color: white; /* Letras blancas para el input */
+  border-color: #364A63; /* Color del borde */
+  width: calc(110%); /* Ajustar el ancho del input restando el ancho del label */
+}
+
+.input-to::placeholder,
+.input-amount::placeholder {
+  color: #888 !important; /* Color del placeholder */
+}
+
+.input-to:focus, .input-to:hover,
+.input-amount:focus, .input-amount:hover {
+  border-color: #364A63 !important; /* Color del borde al enfocar o pasar el mouse */
+  box-shadow: 0 0 0 2px rgba(54, 74, 99, 0.2) !important; /* Sombra del borde */
+}

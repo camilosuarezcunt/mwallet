@@ -1,0 +1,77 @@
+/* ShareVault.css */
+.share-vault-form {
+  padding: 10px 20px 20px 20px; /* Ajustar padding */
+  background-color: #101924; /* Color de fondo ajustado */
+  color: white; /* Color del texto */
+  border: 1px solid #364A63; /* Color del borde ajustado */
+  border-radius: 4px;
+  font-size: 14px; /* Ajustar el tamaño de la fuente */
+}
+
+.share-vault-form .ant-form-item-label > label {
+  color: white !important; /* Color del texto de las etiquetas */
+}
+
+.share-vault-form .ant-input {
+  background-color: #101924; /* Fondo negro para el input */
+  color: white; /* Letras blancas para el input */
+  border-color: #364A63; /* Color del borde */
+}
+
+.share-vault-form .ant-input:focus, .share-vault-form .ant-input:hover {
+  border-color: #364A63; /* Color del borde al enfocar o pasar el mouse */
+  box-shadow: 0 0 0 2px rgba(54, 74, 99, 0.2); /* Sombra del borde */
+}
+
+.share-vault-form .ant-btn {
+  color: black; /* Color del texto de los botones */
+}
+
+.share-vault-form .ant-btn-primary {
+  background-color: #0E4EA4; /* Color del botón primario */
+  border-color: #0E4EA4; /* Color del borde del botón primario */
+}
+
+.share-vault-form .ant-btn-primary:hover {
+  background-color: #0c3b8a; /* Color del botón primario al pasar el mouse */
+  border-color: #0c3b8a; /* Color del borde al pasar el mouse */
+}
+
+.share-vault-form .delete-button {
+  background-color: #d9363e; /* Color del botón de peligro */
+  border-color: #d9363e; /* Color del borde del botón de peligro */
+}
+
+.share-vault-form .delete-button:hover {
+  background-color: #b1272b; /* Color del botón de peligro al pasar el mouse */
+  border-color: #b1272b; /* Color del borde al pasar el mouse */
+}
+
+.share-vault-form .close-button {
+  background-color: #f0f0f09c;
+  border-color: #f0f0f09c;
+  color: white !important;
+}
+
+.share-vault-form .close-button:hover {
+  background-color: #e6e6e6; /* Color del botón por defecto al pasar el mouse */
+  border-color: #d9d9d9; /* Color del borde al pasar el mouse */
+}
+
+.share-vault-form .ant-list {
+  border-color: #364A63; /* Color del borde de la lista */
+}
+
+.share-vault-form .ant-list-header {
+  color: #ffffff; /* Color del texto del encabezado de la lista */
+  border-color: #364A63; /* Color del borde del encabezado de la lista */
+}
+
+.share-vault-form .ant-list-item {
+  color: white; /* Color del texto de los elementos de la lista */
+  border-color: #364A63; /* Color del borde de los elementos de la lista */
+}
+
+.share-vault-form .ant-empty-description {
+  color: white !important; /* Color del texto "No data" */
+}

@@ -1,9 +1,10 @@
-// NFTs.jsx
+// import "../App.css";
 import React from 'react';
+import './NFTs.css';
 
 const NFTs = ({ nfts }) => {
   return (
-    <>
+    <div className="nfts-container">
       {nfts ? (
         <>
           {nfts.map((e, i) => (
@@ -19,10 +20,10 @@ const NFTs = ({ nfts }) => {
         </>
       ) : (
         <>
-          <span>You seem to not have any NFTs yet</span>
+          <span className='nunito-font'>You seem to not have any NFTs yet</span>
         </>
       )}
-    </>
+    </div>
   );
 };
 
